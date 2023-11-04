@@ -74,7 +74,7 @@ struct node *add(struct node *head1, struct node *head2) {
     }
     return res;
 }
-struct node *subtract(struct node * head1, struct node *head2) {
+struct node *sub(struct node * head1, struct node *head2) {
     struct node* res = NULL,*temp,* it;
     if(head1->data < head2->data) {
         temp = (struct node* )malloc(sizeof(struct node));
@@ -130,7 +130,7 @@ struct node *subtract(struct node * head1, struct node *head2) {
     }
     return res;
 }
-struct node *multiply(long long int num1, long long int num2) {
+struct node *mult(long long int num1, long long int num2) {
     long long int res = num1*num2;
     struct node* ans = NULL;
     while (res != 0)
@@ -140,7 +140,7 @@ struct node *multiply(long long int num1, long long int num2) {
     }
     return ans;
 }
-struct node* divide(long long int num1, long long int num2) {
+struct node* div(long long int num1, long long int num2) {
     long long int res = num1/num2;
     struct node *ans = NULL;
     while (res != 0)
@@ -150,7 +150,7 @@ struct node* divide(long long int num1, long long int num2) {
     }
     return ans;
 }
-struct node* modulus(long long int num1, long long int num2) {
+struct node* mod(long long int num1, long long int num2) {
     long long int res = num1%num2;
     struct node *ans = NULL;
     while (res != 0)
